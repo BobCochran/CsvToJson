@@ -1,0 +1,12 @@
+{
+  "name": "csv_to_json_reformat",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bob Cochran <r2cochran2@gmail.com>",
+  "license": "MIT"
+}
