@@ -17,6 +17,8 @@ var rl = readline.createInterface(instream, outstream)
 
 var myFlds = [];
 
+var jstring = "";
+
 //Count number of lines read in
 var lineCount = 0;
 
@@ -28,6 +30,10 @@ rl.on('line', function(line) {
 	//split the line on commas
 
 	var flds = line.split(',')
+	
+	var st1 = flds[0];     //department number, I hope
+
+        console.log("This should be the department number field " + st1)
 
 	myFlds.push(flds)
 } )
@@ -35,7 +41,7 @@ rl.on('line', function(line) {
 rl.on('close', function() {
 
 	console.log("The line count is " + lineCount)
-	console.log("Example of what is in myFlds" + myFlds[1])
+	console.log("Example of what is in myFlds " + myFlds[1])
 
 })
 
