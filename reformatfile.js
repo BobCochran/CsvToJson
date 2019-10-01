@@ -31,9 +31,15 @@ rl.on('line', function(line) {
 
 	var flds = line.split(',')
 	
-	var st1 = flds[0];     //department number, I hope
+	var st1 = flds[0]     //department number
+
+	var st2 = flds[1]     //Number of employees in the department
+
+	jstring = "{ \"deptno\" : " + st1 + "}"  
 
         console.log("This should be the department number field " + st1)
+
+	console.log(jstring)
 
 	myFlds.push(flds)
 } )
