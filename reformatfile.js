@@ -35,7 +35,7 @@ rl.on('line', function(line) {
 
 	var st2 = flds[1]     //Number of employees in the department
 
-	jstring = "{ \"deptno\" : " + st1 + "}"  
+	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "}"  
 
         console.log("This should be the department number field " + st1)
 
