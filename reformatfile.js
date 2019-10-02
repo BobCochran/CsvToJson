@@ -23,6 +23,14 @@ var numberEmps = 0;
 
 var n1Str = "NumberInt(\""  //This is a mongoDB data type 
 
+var sdet = " salaryDetails \: \[ "   // Begin the salary details line
+
+var sAmt = "NumberDecimal(\""       // This is another mongoDB data type
+
+var nm1 = "\{ \"name\" \: "            // key for employee name
+
+var sal1 = "\"salary\" \: "         // key for employee salary
+
 //Count number of lines read in
 var lineCount = 0;
 
@@ -41,7 +49,7 @@ rl.on('line', function(line) {
 
 	numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
-	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + " }"  
+	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet + " }"  
 
         console.log("This should be the department number field " + st1)
 
