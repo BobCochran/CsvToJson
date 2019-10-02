@@ -59,7 +59,7 @@ rl.on('line', function(line) {
 
 			var k = i + 3    // Employee's salary
 
-			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\)"
+			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\) \}\,"
 
 		}  
 	}  
