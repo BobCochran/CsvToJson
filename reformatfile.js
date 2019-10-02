@@ -57,7 +57,7 @@ rl.on('line', function(line) {
 
 			var j = i + 2
 
-			jstring = jstring + nm1 + "\"" + flds[j] + "\"" + " " + sal1
+			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1
 
 		}  
 	}  
