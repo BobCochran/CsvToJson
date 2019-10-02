@@ -23,7 +23,7 @@ var numberEmps = 0;
 
 var n1Str = "NumberInt(\""  //This is a mongoDB data type 
 
-var sdet = " salaryDetails \: \[ "   // Begin the salary details line
+var sdet = " \"salaryDetails\" \: \[ "   // Begin the salary details line
 
 var sAmt = "NumberDecimal(\""       // This is another mongoDB data type
 
