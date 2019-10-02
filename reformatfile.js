@@ -41,7 +41,7 @@ rl.on('line', function(line) {
 
 	numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
-	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)" + " }"  
+	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + " }"  
 
         console.log("This should be the department number field " + st1)
 
