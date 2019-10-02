@@ -19,6 +19,10 @@ var myFlds = [];
 
 var jstring = "";
 
+var numberEmps = 0;
+
+var n1Str = "NumberInt(\""  //This is a mongoDB data type 
+
 //Count number of lines read in
 var lineCount = 0;
 
@@ -31,11 +35,13 @@ rl.on('line', function(line) {
 
 	var flds = line.split(',')
 	
-	var st1 = flds[0]     //department number
+	var st1 = flds[0]            //department number
 
-	var st2 = flds[1]     //Number of employees in the department
+	var st2 = flds[1]            //Number of employees in the department
 
-	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + " }"  
+	numberEmps = parseInt(st2);  //Number of employees converted to integer.
+
+	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)" + " }"  
 
         console.log("This should be the department number field " + st1)
 
