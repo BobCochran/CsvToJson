@@ -49,7 +49,7 @@ rl.on('line', function(line) {
 
 	numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
-	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet"
+	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet
 
 	if (numberEmps > 0) {
 
