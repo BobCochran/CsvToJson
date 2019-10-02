@@ -55,9 +55,11 @@ rl.on('line', function(line) {
 
 		for (i = 0; i < numberEmps; i++) {
 
-			var j = i + 2
+			var j = i + 2    // The name of the employee
 
-			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1
+			var k = i + 3    // Employee's salary
+
+			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\)"
 
 		}  
 	}  
