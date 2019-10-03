@@ -63,7 +63,7 @@ rl.on('line', function(line) {
 
 		for (i = 0; i < numberEmps; i++) {
 
-			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\) \}\, "
+			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\) \}"
 
 			j = j + 2
 
@@ -71,12 +71,20 @@ rl.on('line', function(line) {
 
 			stlgnth = parseInt(jstring.length)
 
+			var m = i + 1;
+
+			console.log(m);
+
+			if (m < numberEmps) {
+
+				jstring = jstring + "\, "
+
+			}
+
 		}  
 	}  
 
 	stlgnth = stlgnth - 2
-
-	jstring[stlgnth] = jstring[stlgnth] + nEndArr
 
 	console.log(jstring)
 
