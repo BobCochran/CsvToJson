@@ -53,8 +53,6 @@ rl.on('line', function(line) {
 
 	var k = 3                   //point to salary of first employee
 
-	var stlgnth = 0             //Ending length of jstring
-
 	numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
 	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet
@@ -73,8 +71,6 @@ rl.on('line', function(line) {
 
 			var m = i + 1;
 
-			console.log(m);
-
 			if (m < numberEmps) {
 
 				jstring = jstring + "\, "
@@ -90,17 +86,13 @@ rl.on('line', function(line) {
 		}  
 	}  
 
-	stlgnth = stlgnth - 2
-
 	console.log(jstring)
 
-	myFlds.push(flds)
 } )
 
 rl.on('close', function() {
 
 	console.log("The line count is " + lineCount)
-	console.log("Example of what is in myFlds " + myFlds[1])
 
 })
 
