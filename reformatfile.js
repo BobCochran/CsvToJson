@@ -81,6 +81,12 @@ rl.on('line', function(line) {
 
 			}
 
+			if (m === numberEmps) {
+
+				jstring = jstring + nEndArr
+
+			} 
+
 		}  
 	}  
 
