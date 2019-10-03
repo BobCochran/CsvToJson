@@ -72,7 +72,7 @@ rl.on('line', function(line) {
 
 	console.log(jstring)
 
-	console.log(jstring.length())
+	console.log(jstring.length)
 
 	myFlds.push(flds)
 } )
