@@ -76,11 +76,9 @@ rl.on('line', function(line) {
 
 	stlgnth = stlgnth - 2
 
+	jstring = jstring[stlgnth] + nEndArr
+
 	console.log(jstring)
-
-	console.log(jstring.length)
-
-	console.log("The character at jstring.length-2 " + jstring[stlgnth])
 
 	myFlds.push(flds)
 } )
