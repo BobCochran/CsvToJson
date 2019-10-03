@@ -31,6 +31,8 @@ var nm1 = "\{ \"name\" \: "            // key for employee name
 
 var sal1 = "\"salary\" \: "         // key for employee salary
 
+var nEndArr = " \] \}"               //terminate employee salary array
+
 //Count number of lines read in
 var lineCount = 0;
 
@@ -69,6 +71,8 @@ rl.on('line', function(line) {
 	}  
 
 	console.log(jstring)
+
+	console.log(jstring.length())
 
 	myFlds.push(flds)
 } )
