@@ -76,7 +76,7 @@ rl.on('line', function(line) {
 
 	stlgnth = stlgnth - 2
 
-	jstring = jstring[stlgnth] + nEndArr
+	jstring[stlgnth] = jstring[stlgnth] + nEndArr
 
 	console.log(jstring)
 
