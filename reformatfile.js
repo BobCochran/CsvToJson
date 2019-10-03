@@ -53,6 +53,8 @@ rl.on('line', function(line) {
 
 	var k = 3                   //point to salary of first employee
 
+	var stlgnth = 0             //Ending length of jstring
+
 	numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
 	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet
@@ -63,16 +65,22 @@ rl.on('line', function(line) {
 
 			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\) \}\, "
 
-			j = j + 2;
+			j = j + 2
 
-			k = k + 2;
+			k = k + 2
+
+			stlgnth = parseInt(jstring.length)
 
 		}  
 	}  
 
+	stlgnth = stlgnth - 2
+
 	console.log(jstring)
 
 	console.log(jstring.length)
+
+	console.log("The character at jstring.length-2 " + jstring[stlgnth])
 
 	myFlds.push(flds)
 } )
