@@ -45,7 +45,11 @@ rl.on('line', function(line) {
 	
 	var st1 = flds[0]            //department number
 
-	var st2 = flds[1]            //Number of employees in the department
+	var st2 = flds[1]           //Number of employees in the department
+
+	var j = 2                   //point to name of first employee
+
+	var k = 3                   //point to salary of first employee
 
 	numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
@@ -55,11 +59,11 @@ rl.on('line', function(line) {
 
 		for (i = 0; i < numberEmps; i++) {
 
-			var j = i + 2    // The name of the employee
+			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\) \}\, "
 
-			var k = i + 3    // Employee's salary
+			j = j + 2;
 
-			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\) \}\,"
+			k = k + 2;
 
 		}  
 	}  
