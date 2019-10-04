@@ -1,0 +1,5 @@
+{ "deptno" : "10", "numbEmployees" : NumberInt("3"), "salaryDetails" : [ { "name" : "john", "salary" : NumberDecimal("100.00") }, { "name" : "marie", "salary" : NumberDecimal("150.00") }, { "name" : "katie", "salary" : NumberDecimal("120.00") } ] }
+{ "deptno" : "11", "numbEmployees" : NumberInt("2"), "salaryDetails" : [ { "name" : "james", "salary" : NumberDecimal("130.00") }, { "name" : "myra", "salary" : NumberDecimal("175.00") } ] }
+{ "deptno" : "12", "numbEmployees" : NumberInt("4"), "salaryDetails" : [ { "name" : "Andrew", "salary" : NumberDecimal("135.00") }, { "name" : "Benjamin", "salary" : NumberDecimal("135.00") }, { "name" : "Conor", "salary" : NumberDecimal("180.00") }, { "name" : "David", "salary" : NumberDecimal("108.00") } ] }
+{ "deptno" : "", "numbEmployees" : NumberInt("undefined"), "salaryDetails" : [ 
+The line count is 4
