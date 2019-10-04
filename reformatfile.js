@@ -96,5 +96,3 @@ rl.on('close', function() {
 
 })
 
-//console.log(data.toString('utf8'))
-
