@@ -25,7 +25,7 @@ var n1Str = "NumberInt(\""                   //This is a mongoDB data type
 
 var sdet = " \"salaryDetails\" \: \[ "       // Begin the salary details line
 
-var sAmt = "\{\"\$numberDecimal \: \""      // This is another mongoDB data type
+var sAmt = "\{\"\$numberDecimal\" \: \""      // This is another mongoDB data type
 
 var nm1 = "\{ \"name\" \: "            // key for employee name
 
