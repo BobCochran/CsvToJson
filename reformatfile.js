@@ -69,8 +69,6 @@ rl.on('line', function(line) {
 
 			k = k + 2
 
-			stlgnth = parseInt(jstring.length)
-
 			var m = i + 1;
 
 			if (m < numberEmps) {
