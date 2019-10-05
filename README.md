@@ -38,9 +38,9 @@ The json file can then be imported into a MongoDB collection using the mongoimpo
 
 #### Required Software
 
-+Node.js version 10.16.3 or higher.
-+MongoDB server, Community or Enterprise editions, version 4.x. 
-+mongoimport version r4.0.12 or higher.
++Node.js version 10.16.3 or higher.  
++MongoDB server, Community or Enterprise editions, version 4.x.  
++mongoimport version r4.0.12 or higher.  
 
 Note that in this use case, json data will not import successfully into MongoDB server version 2.x. This is because the "salary" field above is reformatted as a Decimal128 data type, and early versions of MongoDB server do not support Decimal128. 
 
