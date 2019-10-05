@@ -34,7 +34,7 @@ You may need to edit the json_data.json to remove non-json lines at the bottom o
 
 The json file can then be imported into a MongoDB collection using the mongoimport utility:
 
-`mongoimport --db test --collection t1 --file cleaned_up_test2.json`
+`mongoimport --db test --collection t1 --file cleaned_up_test3.json`
 
 #### Required Software
 
