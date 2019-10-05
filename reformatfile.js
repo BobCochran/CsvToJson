@@ -42,53 +42,57 @@ rl.on('line', function(line) {
 
 	//increment line counter
 	lineCount++
-
-	//split the line on commas
-
-	var flds = line.split(',')
 	
-	var st1 = flds[0]            //department number
+	//Don't process empty lines
 
-	var st2 = flds[1]           //Number of employees in the department
+	if (line.length > 6) {
+		
+		//split the line on commas
 
-	var j = 2                   //point to name of first employee
+		var flds = line.split(',')
+	
+		var st1 = flds[0]            //department number
 
-	var k = 3                   //point to salary of first employee
+		var st2 = flds[1]           //Number of employees in the department
 
-	numberEmps = parseInt(st2);  //Number of employees converted to integer.
+		var j = 2                   //point to name of first employee
 
-	jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet
+		var k = 3                   //point to salary of first employee
 
-	if (numberEmps > 0) {
+		numberEmps = parseInt(st2);  //Number of employees converted to integer.
 
-		for (i = 0; i < numberEmps; i++) {
+		jstring = "{ \"deptno\" : " + "\"" + st1 + "\"" + "\, \"numbEmployees\" : " + n1Str + st2 + "\"" + "\)\," + sdet
 
-			jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\} \}"
+		if (numberEmps > 0) {
 
-			j = j + 2
+			for (i = 0; i < numberEmps; i++) {
 
-			k = k + 2
+				jstring = jstring + nm1 + "\"" + flds[j] + "\"\," + " " + sal1 + sAmt + flds[k] + "\.00\"\} \}"
 
-			var m = i + 1;
+				j = j + 2
 
-			if (m < numberEmps) {
+				k = k + 2
 
-				jstring = jstring + "\, "
+				var m = i + 1;
 
-			}
+				if (m < numberEmps) {
 
-			if (m === numberEmps) {
+					jstring = jstring + "\, "
 
-				jstring = jstring + nEndArr
+				}
 
-			} 
+				if (m === numberEmps) {
+
+					jstring = jstring + nEndArr
+
+				} 
 
 		}  
 	}  
 
 	console.log(jstring)
 
-} )
+} } )
 
 rl.on('close', function() {
 
