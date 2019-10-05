@@ -9,6 +9,8 @@ var readline = require('readline')
 
 var stream = require('stream')
 
+/* Change the filename for instream if you wish to 
+process a different file. */
 var instream = fs.createReadStream('csvdata2.csv')
 
 var outstream = new stream()
